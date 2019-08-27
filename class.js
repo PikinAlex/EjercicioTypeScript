@@ -1,6 +1,3 @@
-var a = 12;
-var b = 17;
-function showProduct(first, second) {
-    console.log("The product is: " + first * second);
-}
-showProduct(a, b);
+var e = "building";
+var f = 300;
+var sentence = "The " + e + " in front of my office is " + f + " feet\ntall.";

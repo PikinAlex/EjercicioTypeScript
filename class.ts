@@ -1,8 +1,4 @@
-let a: number = 12;
-let b: number = 17;
-
-function showProduct(first: number, second: number): void {
-    console.log("The product is: "+ first * second);
-}
-
-showProduct(a,b);
+let e: string = "building";
+let f: number = 300;
+let sentence: string = `The ${e} in front of my office is ${f} feet
+tall.`;

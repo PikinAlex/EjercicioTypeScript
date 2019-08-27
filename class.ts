@@ -1,4 +1,22 @@
-let e: string = "building";
-let f: number = 300;
-let sentence: string = `The ${e} in front of my office is ${f} feet
-tall.`;
+interface Lakes {
+    name: string,
+    area: number,
+    length: number,
+    depth: number,
+    isFreshwater: boolean,
+    countries: string[],
+    frozen?: string[],
+    [extraProp: string]: any
+}
+
+let fourthLake: Lakes = {
+    name: 'Tanganyika',
+    depth: 1470,
+    length: 676,
+    area: 32600,
+    isFreshwater: true,
+    countries: ['Burundi', 'Tanzania', 'Zambia', 'Congo'],
+    kigoma:'Tanzania',
+    kalemie: 'Congo',
+    bujumbura: 'Burundi'
+}

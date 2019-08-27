@@ -1,3 +1,11 @@
-var e = "building";
-var f = 300;
-var sentence = "The " + e + " in front of my office is " + f + " feet\ntall.";
+var fourthLake = {
+    name: 'Tanganyika',
+    depth: 1470,
+    length: 676,
+    area: 32600,
+    isFreshwater: true,
+    countries: ['Burundi', 'Tanzania', 'Zambia', 'Congo'],
+    kigoma: 'Tanzania',
+    kalemie: 'Congo',
+    bujumbura: 'Burundi'
+};

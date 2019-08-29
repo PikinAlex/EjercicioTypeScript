@@ -14,3 +14,11 @@ interface Enemy {
     tank.health = 95;
     // Error because 'damage' is read-only.
     tank.damage = 10;
+
+    interface EnemyHit {
+        (name: Enemy, damageDone: number): number;
+        }
+        let tankHit: EnemyHit = function(tankName: Enemy, damageDone: number) {
+        tankName.health -= damageDone;
+        return tankName.health;
+    }

@@ -1,24 +1,12 @@
-interface Enemy {
-    readonly size: number,
-    health: number,
-    range: number,
-    readonly damage: number
+class Person {
+    name: string;
+    constructor(theName: string) {
+    this.name = theName;
     }
-    let tank: Enemy = {
-    size: 50,
-    health: 100,
-    range: 60,
-    damage: 12
+    introduceSelf() {
+    console.log("Hi, I am " + this.name + "!");
     }
-    // This is Okay
-    tank.health = 95;
-    // Error because 'damage' is read-only.
-    tank.damage = 10;
-
-    interface EnemyHit {
-        (name: Enemy, damageDone: number): number;
-        }
-        let tankHit: EnemyHit = function(tankName: Enemy, damageDone: number) {
-        tankName.health -= damageDone;
-        return tankName.health;
     }
+    let personA = new Person("Sally");
+    personA.introduceSelf();
+    
